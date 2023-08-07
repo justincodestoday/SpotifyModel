@@ -54,12 +54,12 @@ def main():
     components.html(html_temp2)
     # components.html() will render the render the html component
         
-    danceability = st.number_input("danceability", min_value=0.00, max_value=1.00, step=0.05)
-    energy = st.number_input("energy", min_value=0.00, max_value=1.00, step=0.05)
-    speechiness = st.number_input("speechiness", min_value=0.00, max_value=1.00, step=0.05)
-    acousticness = st.number_input("acousticness", min_value=0.00, max_value=1.00, step=0.05)
-    liveness = st.number_input("liveness", min_value=0.00, max_value=1.00, step=0.05)
-    valence = st.number_input("valence", min_value=0.00, max_value=1.00, step=0.05)
+    danceability = st.slider("danceability", min_value=0.00, max_value=1.00, step=0.05)
+    energy = st.slider("energy", min_value=0.00, max_value=1.00, step=0.05)
+    speechiness = st.slider("speechiness", min_value=0.00, max_value=1.00, step=0.05)
+    acousticness = st.slider("acousticness", min_value=0.00, max_value=1.00, step=0.05)
+    liveness = st.slider("liveness", min_value=0.00, max_value=1.00, step=0.05)
+    valence = st.slider("valence", min_value=0.00, max_value=1.00, step=0.05)
     
     genre=""
     result=""
